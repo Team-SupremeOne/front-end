@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 
 function ArtWork() {
 	const [artWork, setArtWork] = useState([]);
-	const url = 'http://localhost:6060';
+	const url = 'http://localhost:6060/artwork';
 
 	useEffect(() => {
-		fetch(``)
+		fetch(url)
 			.then((response) => response.json())
 			.then((data) => setArtWork(data));
 	}, []);
