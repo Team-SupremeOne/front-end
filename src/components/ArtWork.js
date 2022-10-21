@@ -1,10 +1,10 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 function ArtWork() {
 	const [artWork, setArtWork] = useState([]);
-	const url = 'http://localhost:6060/artwork';
+	const url = 'http://localhost:6060/artworks';
 
 	useEffect(() => {
 		fetch(url)
@@ -16,7 +16,7 @@ function ArtWork() {
 		<div className='art-container'>
 			{artWork.map((art) => {
 				return (
-					<Link to={`details/${art.id}`} key={art.id}>
+					<Link to={`artworks/${art._id}`} key={art._id}>
 						<div className='card'>
 							<div className='card-image'>
 								<img src={art.image} alt={art.name} />

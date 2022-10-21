@@ -18,7 +18,7 @@ const Form = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		axios
-			.post('http://localhost:6060/artwork')
+			.post('http://localhost:6060/artworks')
 			.then((res) => res.json())
 			.then((data) => console.log(data));
 
