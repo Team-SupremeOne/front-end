@@ -3,6 +3,7 @@ import Nav from './components/Nav';
 import './App.css';
 import ArtWork from './components/ArtWork';
 import ArtDetails from './components/ArtDetails';
+import Form from './components/Form';
 
 function App() {
 	return (
@@ -18,6 +19,7 @@ function App() {
 				<Routes>
 					<Route path='/' element={<ArtWork />} />
 					<Route path='details/:id' element={<ArtDetails />} />
+					<Route  path='/addArtwork' element={<Form />} />
 				</Routes>
 			</main>
 		</>

@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate,useParams } from 'react-router-dom';
 
 function ArtDetails() {
 	let { id } = useParams();
+	const navigate = useNavigate()
 	const [art, setArt] = useState(null);
 
 	useEffect(() => {
