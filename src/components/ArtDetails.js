@@ -1,16 +1,15 @@
 import { useState, useEffect } from 'react';
-import { useNavigate,useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 function ArtDetails() {
 	let { id } = useParams();
-	const navigate = useNavigate()
-	const [art, setArt] = useState(null);
+	const [art, setArt] = useState([]);
 
 	useEffect(() => {
-		fetch(`http://localhost:6060/artwork/${id}`)
+		fetch(`http://localhost:6060/artworks/${id}`)
 			.then((response) => response.json())
 			.then((data) => setArt(data));
-	}, [id]);
+	}, []);
 
 	if (!art) {
 		return <h2 className='loading'>Loading...</h2>;
