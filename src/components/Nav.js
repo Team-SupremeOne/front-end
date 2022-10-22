@@ -5,16 +5,16 @@ function Nav(props) {
 		<div>
 			<ul className='nav-bar'>
 				<li>
-					<a href='/'>Home</a>
+					<a href='/'>Home |</a>
 				</li>
 				<li>
-					<a href='addArtwork'>Add Artwork</a>
+					<a href='addArtwork'>Add Artwork |</a>
 				</li>
 				<li>
-					<a href=''>Categories</a>
+					<a href=''>Categories |</a>
 				</li>
 				<li>
-					<a href=''>Favorites</a>
+					<a href=''>Favorites |</a>
 				</li>
 			</ul>
 		</div>

@@ -3,8 +3,8 @@ body {
 }
 
 .nav-bar {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  justify-content: center;
   list-style-type: none;
   margin: 0;
   padding: 0 auto;
@@ -15,6 +15,13 @@ body {
 .title {
   text-align: center;
   color: rgb(218, 28, 28);
+  text-shadow: 2px 2px 2px whitesmoke;
+  font-family: cursive;
+  font-size: 50px;
+}
+.welcome {
+  text-align: center;
+  color: rgb(10, 9, 9);
   text-shadow: 2px 2px 2px whitesmoke
 }
 a:link {
@@ -72,4 +79,58 @@ label {
 input::placeholder {
   font-weight: bold;
   color: rgb(5, 5, 210);
+}
+
+.details-container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.details-image {
+  padding: 1rem;
+  width: 200px;
+}
+
+.details {
+  padding: 1rem;
+  width: 350px;
+  background: lightblue;
+}
+
+.details h2 {
+  font-size: 2rem;
+  font-weight: 200;
+  margin-bottom: 0;
+}
+
+.details h3 {
+  font-family: 'Noto Serif', Georgia, serif;
+  font-style: italic;
+  font-weight: 200;
+  margin-top: 0;
+}
+
+.art-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  grid-auto-rows: minmax(250px, auto);
+  grid-gap: 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 1rem;
+}
+
+.card {
+  border: 3px solid rgb(52, 50, 50);
+  border-radius: 1rem;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+}
+
+.card-image {
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }

@@ -14,7 +14,7 @@ function App() {
 				</Link>
 				<Nav />
 			</header>
-			<h2 className='title'>Welcome to Supreme Art Gallery</h2>
+			<h2 className='welcome'>Welcome to Supreme Art Gallery</h2>
 			<main>
 				<Routes>
 					<Route path='/' element={<ArtWork />} />
