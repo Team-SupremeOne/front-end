@@ -133,4 +133,7 @@ input::placeholder {
   align-items: center;
   display: flex;
   justify-content: center;
+  object-fit: cover;
+  width: 100%;
+ 
 }
