@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import { Route, Routes, Link, } from 'react-router-dom';
+import Nav from './components/Nav';
 import './App.css';
+import ArtWork from './components/ArtWork';
+import ArtDetails from './components/ArtDetails';
+import Form from './components/Form';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<>
+			<header>
+				<Link to='/'>
+					<h1 className='title'>Supreme Art Gallery</h1>
+				</Link>
+				<Nav />
+			</header>
+			<h2 className='welcome'>Welcome to Supreme Art Gallery</h2>
+			<main>
+				<Routes>
+					<Route path='/' element={<ArtWork />} />
+					<Route path='artworks/:id' element={<ArtDetails />} />
+					<Route path='/addArtwork' element={<Form />} />
+				</Routes>
+			</main>
+		</>
+	);
 }
 
 export default App;
