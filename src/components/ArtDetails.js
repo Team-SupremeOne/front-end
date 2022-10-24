@@ -9,7 +9,7 @@ function ArtDetails() {
 	const navigate = useNavigate();
 
 	useEffect(() => {
-		fetch(`http://localhost:6060/artworks/${id}`)
+		fetch(`https://radiant-headland-48846.herokuapp.com/artworks/${id}`)
 			.then((response) => response.json())
 			.then((data) => setArt(data));
 	}, []);
@@ -29,13 +29,19 @@ function ArtDetails() {
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		// Write your PUT fetch() or axios() request here
-		axios.patch(`http://localhost:6060/artworks/${id}`, art);
+		axios.patch(
+			`https://radiant-headland-48846.herokuapp.com/artworks/${id}`,
+			art
+		);
 		navigate('/');
 	};
 
 	const handleDelete = () => {
 		// Write your DELETE fetch() or axios() request here
-		axios.delete(`http://localhost:6060/artworks/${id}`, art);
+		axios.delete(
+			`https://radiant-headland-48846.herokuapp.com/artworks/${id}`,
+			art
+		);
 		navigate('/');
 	};
 

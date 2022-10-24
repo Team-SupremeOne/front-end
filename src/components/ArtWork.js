@@ -4,7 +4,7 @@ import { Link, useParams } from 'react-router-dom';
 
 function ArtWork() {
 	const [artWork, setArtWork] = useState([]);
-	const url = 'http://localhost:6060/artworks';
+	const url = 'https://radiant-headland-48846.herokuapp.com/artworks';
 
 	useEffect(() => {
 		fetch(url)
