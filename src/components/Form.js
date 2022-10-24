@@ -33,7 +33,7 @@ const Form = () => {
 					<label htmlFor='artwork'>Art Name </label>
 					<input
 						onChange={handleChange}
-						id='art'
+						id='name'
 						value={art.name}
 						placeholder='Enter Art'
 					/>
@@ -54,8 +54,8 @@ const Form = () => {
 					<label htmlFor='artist-info'>Artist Info </label>
 					<input
 						onChange={handleChange}
-						id='artist-info'
-						value={art.name}
+						id='artistInfo'
+						value={art.artistInfo}
 						placeholder='Enter Artist-Info'
 					/>
 					<button className='submitBtn' type='submit'>
