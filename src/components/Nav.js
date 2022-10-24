@@ -8,14 +8,15 @@ function Nav(props) {
 					<a href='/'>Home |</a>
 				</li>
 				<li>
-					<a href='addArtwork'>Add Artwork |</a>
+					<a href=''>About Us |</a>
 				</li>
 				<li>
-					<a href=''>Categories |</a>
+					<a href='addArtwork'>Add Artwork </a>
 				</li>
-				<li>
+
+				{/* <li>
 					<a href=''>Favorites |</a>
-				</li>
+				</li> */}
 			</ul>
 		</div>
 	);
