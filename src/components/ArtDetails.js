@@ -51,9 +51,16 @@ function ArtDetails() {
 						<h3>{art.name}</h3>
 						<img src={art.image} alt={art.name} />
 						<form onSubmit={handleSubmit}>
-							<label className='description' htmlFor='description'>Current Description</label>
+							<label className='description' htmlFor='description'>
+								Current Description
+							</label>
 							<p>{art.description}</p>
-							<input onChange={handleChange} id='description' value='' placeholder='Edit Description'/>
+							<input
+								onChange={handleChange}
+								id='description'
+								value=''
+								placeholder='Edit Description'
+							/>
 							<button type='submit'>Submit</button>
 							<button type='button' onClick={closeModal}>
 								Close
@@ -70,8 +77,14 @@ function ArtDetails() {
 						<p>{art.description}</p>
 						<h3>More ArtWork from this Artist</h3>
 						<h4>{art.artistInfo}</h4>
-						<button onClick={editShowPage}>Edit</button>
-						<button onClick={handleDelete}>Delete</button>
+						<div className='modal-btns'>
+							<button className='btn' onClick={editShowPage}>
+								Edit
+							</button>
+							<button className='btn' onClick={handleDelete}>
+								Delete
+							</button>
+						</div>
 					</div>
 				</div>
 			)}
