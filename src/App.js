@@ -4,6 +4,7 @@ import './App.css';
 import ArtWork from './components/ArtWork';
 import ArtDetails from './components/ArtDetails';
 import Form from './components/Form';
+import AboutUs from './components/AboutUs';
 
 function App() {
 	return (
@@ -20,7 +21,7 @@ function App() {
 					<Route path='/' element={<ArtWork />} />
 					<Route path='artworks/:id' element={<ArtDetails />} />
 					<Route path='/addArtwork' element={<Form />} />
-					<Route />
+					<Route path='aboutUs' element={<AboutUs />}/>
 				</Routes>
 			</main>
 		</>
