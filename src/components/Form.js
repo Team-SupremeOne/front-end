@@ -35,14 +35,14 @@ const Form = () => {
 						onChange={handleChange}
 						id='name'
 						value={art.name}
-						placeholder='Enter Art'
+						placeholder='Enter Art Name'
 					/>
 					<label htmlFor='image'>Art Image </label>
 					<input
 						onChange={handleChange}
 						id='image'
 						value={art.image}
-						placeholder='Enter Image'
+						placeholder='Enter Image URL'
 					/>
 					<label htmlFor='description'>Art Description </label>
 					<input
