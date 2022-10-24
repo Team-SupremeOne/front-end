@@ -135,5 +135,20 @@ input::placeholder {
   justify-content: center;
   object-fit: cover;
   width: 100%;
- 
+}
+
+.modal {
+  align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.edit {
+  text-align: center;
+}
+
+.description {
+  color: black;
+  text-shadow:none;
 }
