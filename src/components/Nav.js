@@ -11,10 +11,7 @@ function Nav(props) {
 					<a href='addArtwork'>Add Artwork |</a>
 				</li>
 				<li>
-					<a href=''>Categories |</a>
-				</li>
-				<li>
-					<a href=''>Favorites |</a>
+					<a href='aboutUs'>About Us </a>
 				</li>
 			</ul>
 		</div>
