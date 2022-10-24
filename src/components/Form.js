@@ -18,7 +18,7 @@ const Form = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		axios
-			.post('http://localhost:6060/artworks', art)
+			.post('https://radiant-headland-48846.herokuapp.com/artworks', art)
 			.then((res) => res.json())
 			.then((data) => console.log(data));
 
