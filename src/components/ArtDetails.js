@@ -13,6 +13,10 @@ function ArtDetails() {
 			.then((data) => setArt(data));
 	}, []);
 
+	const handleChange = (event) => {
+		setArt({ ...art, [event.target.id]: event.target.value });
+	};
+
 	const editShowPage = () => {
 		setModal(true);
 	};
@@ -39,18 +43,39 @@ function ArtDetails() {
 	}
 
 	return (
-		<div className='details-container'>
-			<img src={art.image} alt={art.name} />
-			<div className='details'>
-				<h2>{art.name}</h2>
-				<h4>Description</h4>
-				<p>{art.description}</p>
-				<h3>More ArtWork from this Artist</h3>
-				<h4>{art.artistInfo}</h4>
-				<button onClick={editShowPage}>Edit</button>
-				<button onClick={handleDelete}>Delete</button>
-			</div>
-		</div>
+		<>
+			{modal ? (
+				<div>
+					<h2 className='edit'>Edit Mode</h2>
+					<div className='modal'>
+						<h3>{art.name}</h3>
+						<img src={art.image} alt={art.name} />
+						<form onSubmit={handleSubmit}>
+							<label className='description' htmlFor='description'>Current Description</label>
+							<p>{art.description}</p>
+							<input onChange={handleChange} id='description' value='' placeholder='Edit Description'/>
+							<button type='submit'>Submit</button>
+							<button type='button' onClick={closeModal}>
+								Close
+							</button>
+						</form>
+					</div>
+				</div>
+			) : (
+				<div className='details-container'>
+					<img src={art.image} alt={art.name} />
+					<div className='details'>
+						<h2>{art.name}</h2>
+						<h4>Description</h4>
+						<p>{art.description}</p>
+						<h3>More ArtWork from this Artist</h3>
+						<h4>{art.artistInfo}</h4>
+						<button onClick={editShowPage}>Edit</button>
+						<button onClick={handleDelete}>Delete</button>
+					</div>
+				</div>
+			)}
+		</>
 	);
 }
 
