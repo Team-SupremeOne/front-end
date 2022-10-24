@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 function ArtDetails() {
 	let { id } = useParams();
 	const [art, setArt] = useState([]);
 	const [modal, setModal] = useState(false);
+	const navigate = useNavigate();
 
 	useEffect(() => {
 		fetch(`http://localhost:6060/artworks/${id}`)
@@ -28,14 +29,14 @@ function ArtDetails() {
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		// Write your PUT fetch() or axios() request here
-		axios.put(`http://localhost:6060/artworks/${id}`, art);
-		// navigate('/');
+		axios.patch(`http://localhost:6060/artworks/${id}`, art);
+		navigate('/');
 	};
 
 	const handleDelete = () => {
 		// Write your DELETE fetch() or axios() request here
 		axios.delete(`http://localhost:6060/artworks/${id}`, art);
-		// navigate('/');
+		navigate('/');
 	};
 
 	if (!art) {
@@ -54,11 +55,10 @@ function ArtDetails() {
 							<label className='description' htmlFor='description'>
 								Current Description
 							</label>
-							<p>{art.description}</p>
-							<input
+							<textarea
 								onChange={handleChange}
 								id='description'
-								value=''
+								value={art.description}
 								placeholder='Edit Description'
 							/>
 							<button type='submit'>Submit</button>
