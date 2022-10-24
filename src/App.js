@@ -20,6 +20,7 @@ function App() {
 					<Route path='/' element={<ArtWork />} />
 					<Route path='artworks/:id' element={<ArtDetails />} />
 					<Route path='/addArtwork' element={<Form />} />
+					<Route />
 				</Routes>
 			</main>
 		</>
