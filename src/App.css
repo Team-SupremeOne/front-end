@@ -1,13 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kufam&family=Nabla&display=swap');
 
 * {
-  font-family: 'Nabla', cursive;
-  background-color: black;
-
+  font-family: 'Kufam', sans-serif;
+  
+  /* background-image: url('https://cdn.discordapp.com/attachments/1011787885051121714/1033873507542630471/Untitled_design_1.gif'); */
+  /* background-size: cover;
+    background-repeat: no-repeat;
+    
+    height: 100vh; */
 
 }
 
 body {
+    
     margin: 0;
     background: white;
 
