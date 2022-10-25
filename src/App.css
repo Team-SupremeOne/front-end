@@ -1,21 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
-
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
 
 * {
-  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Nabla', cursive;
+  background-color: black;
 
 
 }
 
 body {
-  
     margin: 0;
     background: white;
-      
-      
 
 }
 
@@ -31,10 +25,11 @@ body {
 
 .title {
   text-align: center;
-  color: rgb(218, 28, 28);
-  text-shadow: 2px 2px 2px whitesmoke;
-  font-family: cursive;
-  font-size: 50px;
+  color: blue;
+  font-size: 100px;
+  
+  
+  
 }
 .welcome {
   text-align: center;
