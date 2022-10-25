@@ -139,12 +139,7 @@ input::placeholder {
   padding: 1rem;
 }
 
-.card {
-  border: 3px solid rgb(52, 50, 50);
-  border-radius: 1rem;
-  display: grid;
-  grid-template-rows: 2fr 1fr;
-}
+/*  */
 
 .card-image {
   align-items: center;

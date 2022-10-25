@@ -40,9 +40,6 @@ function ArtWork() {
 						<Link to={`artworks/${art._id}`} key={art._id}>
 							<div className='card'>
 								<img className='card-image' src={art.image} alt={art.name} />
-								<div className='card-title'>
-									{/* <h3>{art.name}</h3> */}
-								</div>
 							</div>
 						</Link>
 					);
