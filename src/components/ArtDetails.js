@@ -81,7 +81,8 @@ function ArtDetails() {
 						<h2>{art.name}</h2>
 						<h4>Description</h4>
 						<p>{art.description}</p>
-						<h3>More ArtWork from this Artist</h3>
+						<h3>Artist Info</h3>
+
 						<h4>{art.artistInfo}</h4>
 						<div className='modal-btns'>
 							<button className='btn' onClick={editShowPage}>

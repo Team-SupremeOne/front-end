@@ -163,7 +163,14 @@ input::placeholder {
   padding: 1rem;
 }
 
-/*  */
+
+.card {
+  border: 3px solid rgb(215, 214, 214);
+  border-radius: 1rem;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+}
+
 
 .card-image {
   align-items: center;
@@ -186,6 +193,8 @@ input::placeholder {
 
 .description {
   color: azure;
+  
+
   text-shadow:none;
 }
 
@@ -204,6 +213,7 @@ input::placeholder {
 .btn {
   width: 150px;
     font-size: 20px;
+
     color: azure;
 }
  
@@ -286,4 +296,7 @@ input::placeholder {
   .Welcome {
     margin: auto;
   }
-}
+
+   
+
+
