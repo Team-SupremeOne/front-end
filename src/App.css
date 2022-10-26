@@ -3,11 +3,13 @@
 * {
   font-family: 'Rajdhani', sans-serif;
   
-  /* background-image: url('https://cdn.discordapp.com/attachments/1011787885051121714/1033873507542630471/Untitled_design_1.gif'); */
-  /* background-size: cover;
-    background-repeat: no-repeat;
+  background-color: black;
+  background-size: cover;
+  color: azure;
+
+  background-repeat: no-repeat;
     
-    height: 100vh; */
+  
 
 }
 html {
@@ -22,7 +24,6 @@ html {
 body {
     
     margin: 0;
-    background: white;
     text-align: center;
 
 }
@@ -41,7 +42,7 @@ body {
 
 .title {
   text-align: center;
-  color: black;
+  color: azure;
   font-size: 100px;
   width: 100%;
   
@@ -50,8 +51,7 @@ body {
 }
 .welcome {
   text-align: center;
-  color: rgb(10, 9, 9);
-  text-shadow: 2px 2px 2px whitesmoke;
+  color: azure;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -61,8 +61,7 @@ a:link {
 }
 
 a {
-  color: black;
-  text-shadow: 1px 1px 1px black;
+  color: azure;
   font-size: 25px;
   align-items: center;
 }
@@ -85,7 +84,7 @@ a {
   width: 100px;
   font-size: 20px;
   color: white;
-  background-color: black;
+  background-color: azure;
   padding: 5px;
 }
 
@@ -97,8 +96,10 @@ input {
 }
 
 p {
-  font-size: 65px;
-  
+  font-size: 50px;
+  margin: 0 auto;
+  padding: 90px;
+  padding-top: 40px;
   justify-content: center;
   text-align: center;
 }
@@ -110,7 +111,7 @@ label {
   text-align: center;
   margin: 0 auto;
   padding: 10px;
-  color: black;
+  color: azure;
   font-size: 30px;
   font-weight: bold;
 }
@@ -118,7 +119,7 @@ label {
 
 input::placeholder {
   font-weight: bold;
-  color: black;
+  color: azure;
 }
 
 .details-container {
@@ -136,7 +137,7 @@ input::placeholder {
 .details {
   padding: 1rem;
   width: 350px;
-  background: lightblue;
+  background: black;
 }
 
 .details h2 {
@@ -184,7 +185,7 @@ input::placeholder {
 }
 
 .description {
-  color: black;
+  color: azure;
   text-shadow:none;
 }
 
@@ -203,7 +204,7 @@ input::placeholder {
 .btn {
   width: 150px;
     font-size: 20px;
-    color: black;
+    color: azure;
 }
  
 
