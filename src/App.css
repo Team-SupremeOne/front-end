@@ -83,7 +83,7 @@ a {
   margin: 0 auto;
   width: 100px;
   font-size: 20px;
-  color: white;
+  color: black;
   background-color: azure;
   padding: 5px;
 }
@@ -165,7 +165,7 @@ input::placeholder {
 
 
 .card {
-  border: 3px solid rgb(209, 209, 209);
+  border: 3px solid rgb(205, 201, 201);
 }
 
 
@@ -211,7 +211,8 @@ input::placeholder {
   width: 150px;
     font-size: 20px;
 
-    color: azure;
+    background-color: azure;
+    color: black
 }
  
 
