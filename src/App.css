@@ -164,12 +164,12 @@ input::placeholder {
 }
 
 
-.card {
+/* .card {
   border: 3px solid rgb(215, 214, 214);
   border-radius: 1rem;
   display: grid;
   grid-template-rows: 2fr 1fr;
-}
+} */
 
 
 .card-image {
@@ -292,11 +292,10 @@ input::placeholder {
   .nav-bar {
     margin: auto;
   }
-
+  
   .Welcome {
     margin: auto;
   }
+}
 
    
-
-
