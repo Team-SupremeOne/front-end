@@ -8,7 +8,7 @@ function Nav(props) {
 					<a href='/'>Home |</a>
 				</li>
 				<li>
-					<a href=''>About Us |</a>
+					<a href='/aboutUs'>About Us |</a>
 				</li>
 				<li>
 					<a href='addArtwork'>Add Artwork </a>

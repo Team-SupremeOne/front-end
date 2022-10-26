@@ -1,4 +1,4 @@
-import { Route, Routes, Link, } from 'react-router-dom';
+import { Route, Routes, Link } from 'react-router-dom';
 import Nav from './components/Nav';
 import './App.css';
 import ArtWork from './components/ArtWork';
@@ -15,13 +15,12 @@ function App() {
 				</Link>
 				<Nav />
 			</header>
-			<h2 className='welcome'>Welcome to Supreme Art Gallery</h2>
 			<main>
 				<Routes>
 					<Route path='/' element={<ArtWork />} />
 					<Route path='artworks/:id' element={<ArtDetails />} />
 					<Route path='/addArtwork' element={<Form />} />
-					<Route path='aboutUs' element={<AboutUs />}/>
+					<Route path='/aboutUs' element={<AboutUs />} />
 				</Routes>
 			</main>
 		</>
