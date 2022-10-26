@@ -13,7 +13,6 @@ function Nav(props) {
 				<li>
 					<a href='/aboutUs'>About Us </a>
 				</li>
-			</ul>
 		</div>
 	);
 }
